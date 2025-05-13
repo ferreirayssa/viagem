@@ -1,0 +1,45 @@
+Origem,Destino,Distancia_km
+Rio Branco,Porto Velho,544
+Porto Velho,Cuiabá,1450
+Cuiabá,Campo Grande,694
+Campo Grande,Goiânia,935
+Campo Grande,Curitiba,991
+Goiânia,Brasília,209
+Brasília,Palmas,973
+Brasília,Belo Horizonte,740
+Palmas,Goiânia,874
+Palmas,Belém,1273
+Palmas,Teresina,1030
+Belo Horizonte,Vitória,524
+Belo Horizonte,Salvador,1372
+Belo Horizonte,Rio de Janeiro,434
+Salvador,Aracaju,356
+Salvador,Brasília,1440
+Salvador,Goiânia,1643
+Aracaju,Maceió,278
+Maceió,Recife,285
+Recife,João Pessoa,120
+João Pessoa,Natal,185
+Rio de Janeiro,São Paulo,429
+Rio de Janeiro,Brasília,1148
+São Paulo,Curitiba,408
+São Paulo,Belo Horizonte,586
+São Paulo,Brasília,1015
+São Paulo,Goiânia,926
+Curitiba,Florianópolis,300
+Curitiba,Belo Horizonte,1004
+Curitiba,Brasília,1366
+Florianópolis,Porto Alegre,476
+Belém,São Luís,806
+Belém,Teresina,947
+São Luís,Teresina,446
+Teresina,Fortaleza,634
+Teresina,João Pessoa,1224
+Fortaleza,Natal,537
+Manaus,Boa Vista,785
+Manaus,Porto Velho,901
+Vitória,Rio de Janeiro,521
+Vitória,Salvador,1202
+Vitória,Belo Horizonte,520
+Porto Alegre,Curitiba,711
+Porto Alegre,Belo Horizonte,1712
