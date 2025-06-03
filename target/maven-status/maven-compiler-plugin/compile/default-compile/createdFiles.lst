@@ -1,7 +1,7 @@
-com\grafos\CSVLoader.class
-com\grafos\MenorCaminhoCapitais.class
 com\grafos\Aresta.class
 com\grafos\Dijkstra.class
 com\grafos\Vertice.class
-com\grafos\CapitalMapper.class
 com\grafos\Grafo.class
+com\grafos\CSVLoader.class
+com\grafos\MenorCaminhoCapitais.class
+com\grafos\CapitalMapper.class

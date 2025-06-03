@@ -18,7 +18,7 @@ class Grafo {
         adicionarVertice(vOrigem);
         adicionarVertice(vDestino);
         adjacencias.get(vOrigem).add(new Aresta(vDestino, distancia));
-        adjacencias.get(vDestino).add(new Aresta(vOrigem, distancia)); // Bidirecional
+        adjacencias.get(vDestino).add(new Aresta(vOrigem, distancia));
     }
 
     public Map<Vertice, List<Aresta>> getAdjacencias() {
