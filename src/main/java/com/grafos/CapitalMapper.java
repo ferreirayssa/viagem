@@ -4,7 +4,7 @@ import java.text.Normalizer;
 import java.util.HashMap;
 import java.util.Map;
 
-class CapitalMapper {
+public class CapitalMapper {
     private static final Map<String, String> normalizadoParaCapital = new HashMap<>();
 
     static {

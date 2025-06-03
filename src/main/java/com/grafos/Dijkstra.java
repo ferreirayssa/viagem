@@ -8,7 +8,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.PriorityQueue;
 
-class Dijkstra {
+public class Dijkstra {
     public static Map<Vertice, Integer> calcularDistancias(Grafo grafo, Vertice origem, Map<Vertice, Vertice> predecessores) {
         Map<Vertice, Integer> distancias = new HashMap<>();
         PriorityQueue<Vertice> fila = new PriorityQueue<>(Comparator.comparingInt(distancias::get));

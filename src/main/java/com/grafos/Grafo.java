@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-class Grafo {
+public class Grafo {
     Map<Vertice, List<Aresta>> adjacencias = new HashMap<>();
 
     public void adicionarVertice(Vertice v) {

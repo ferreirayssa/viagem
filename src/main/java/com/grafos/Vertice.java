@@ -2,7 +2,7 @@ package com.grafos;
 
 import java.util.Objects;
 
-class Vertice {
+public class Vertice {
     String nome;
 
     public Vertice(String nome) {
@@ -24,6 +24,10 @@ class Vertice {
 
     @Override
     public String toString() {
+        return nome;
+    }
+
+    public String getNome() {
         return nome;
     }
 }
