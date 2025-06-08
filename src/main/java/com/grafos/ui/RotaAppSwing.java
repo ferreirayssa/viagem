@@ -35,27 +35,14 @@ public class RotaAppSwing extends JFrame {
         JButton calcularBtn = new JButton("Calcular Rota");
         calcularBtn.addActionListener(this::calcularRota);
 
-        resultadoArea = new JTextArea(10, 20);
+        resultadoArea = new JTextArea();
+        resultadoArea.setFont(new Font("SansSerif", Font.BOLD, 20));
+        resultadoArea.setMargin(new Insets(10, 10, 10, 10));
+        resultadoArea.setBackground(new Color(250, 250, 250));
+        resultadoArea.setBorder(BorderFactory.createLineBorder(Color.LIGHT_GRAY));
         resultadoArea.setEditable(false);
-        resultadoArea.setFont(new Font("Monospaced", Font.PLAIN, 14));
         resultadoArea.setLineWrap(true);
         resultadoArea.setWrapStyleWord(true);
-
-        // Define fundo branco para o conteúdo da janela
-        getContentPane().setBackground(Color.WHITE);
-
-        // Carrega a imagem do mapa do Brasil (coloque brasil.jpg em src/main/resources)
-        BufferedImage mapaImg = null;
-        try {
-            mapaImg = ImageIO.read(getClass().getResource("/brasil.jpg"));
-        } catch (IOException e) {
-            JOptionPane.showMessageDialog(this, "Erro ao carregar imagem do mapa: " + e.getMessage(),
-                    "Erro", JOptionPane.ERROR_MESSAGE);
-        }
-
-        mapaPanel = new MapaPanel(mapaImg);
-        mapaPanel.setPreferredSize(new Dimension(700, 700));
-        mapaPanel.setBackground(Color.WHITE); // Fundo branco no painel do mapa
 
         // Painel dos controles (lado esquerdo) com largura maior
         JPanel controlesPanel = new JPanel();
@@ -95,6 +82,22 @@ public class RotaAppSwing extends JFrame {
         JScrollPane scroll = new JScrollPane(resultadoArea);
         scroll.setPreferredSize(new Dimension(380, 250));
         controlesPanel.add(scroll, gbc);
+
+        // Define fundo branco para o conteúdo da janela
+        getContentPane().setBackground(Color.WHITE);
+
+        // Carrega a imagem do mapa do Brasil (coloque brasil.jpg em src/main/resources)
+        BufferedImage mapaImg = null;
+        try {
+            mapaImg = ImageIO.read(getClass().getResource("/brasil.jpg"));
+        } catch (IOException e) {
+            JOptionPane.showMessageDialog(this, "Erro ao carregar imagem do mapa: " + e.getMessage(),
+                    "Erro", JOptionPane.ERROR_MESSAGE);
+        }
+
+        mapaPanel = new MapaPanel(mapaImg);
+        mapaPanel.setPreferredSize(new Dimension(700, 700));
+        mapaPanel.setBackground(Color.WHITE); // Fundo branco no painel do mapa
 
         // Layout principal da janela
         setLayout(new BorderLayout(10, 10));

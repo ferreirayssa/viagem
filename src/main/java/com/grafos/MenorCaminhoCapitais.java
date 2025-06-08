@@ -50,5 +50,6 @@ public class MenorCaminhoCapitais {
         }
 
         System.out.println("Sistema encerrado.");
+        scanner.close();
     }
 }
